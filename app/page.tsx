@@ -206,10 +206,10 @@ export default function NextApp() {
 
             <div className="hidden md:flex items-center space-x-6">
               {[
-                { id: 'home', label: 'Who we are' },
-                { id: 'project', label: 'Our Project' },
+                { id: 'home', label: 'Home' },
+                { id: 'project', label: 'Our Projects' },
                 { id: 'join', label: 'Join Us' },
-                { id: 'contact', label: 'Contact' }
+                { id: 'contact', label: 'Contact Us' }
               ].map((tab) => (
                 <button 
                   key={tab.id}
@@ -246,10 +246,10 @@ export default function NextApp() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-[#4A4A4A] border-t border-white/5 px-4 pt-3 pb-5 space-y-2 animate-fadeIn shadow-2xl">
             {[
-              { id: 'home', label: 'Who we are' },
-              { id: 'project', label: 'Our Project' },
-              { id: 'join', label: 'Join Us' },
-              { id: 'contact', label: 'Contact' }
+              { id: 'home', label: 'Home' },
+                { id: 'project', label: 'Our Projects' },
+                { id: 'join', label: 'Join Us' },
+                { id: 'contact', label: 'Contact Us' }
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -349,8 +349,8 @@ function HomePage() {
             </div>
           </div>
           <span className="inline-block bg-[#A08C8A]/15 text-[#F9ECE4] border border-[#A08C8A]/40 rounded-full px-5 py-2 text-[10px] font-extrabold uppercase tracking-widest mb-6">Pioneering Dental Innovations</span>
-          <h1 className="text-4xl sm:text-6xl font-black text-[#F9ECE4] tracking-tight mb-8">Scientific Dental <br /><span className="text-[#A08C8A]">Advancement Network</span></h1>
-          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">Welcome to SDAN, the ultimate Syrian platform for dental researchers, students, and clinical practitioners.</p>
+          <h1 className="text-4xl sm:text-6xl font-black text-[#F9ECE4] tracking-tight mb-8">Syrian Dental<br /><span className="text-[#A08C8A]">Academic Network</span></h1>
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">Connecting Syrian dental minds, turning clinic stories into shared science. Because our work doesn't end in the clinic—it begins with research.</p>
         </div>
       </section>
       <section className="bg-[#F9ECE4] text-[#4A4A4A] py-20 px-4 sm:px-8">
@@ -358,9 +358,9 @@ function HomePage() {
           <div className="text-center mb-16"><h2 className="text-3xl md:text-4xl font-black text-[#4A4A4A] uppercase tracking-widest mb-3">About Our Network</h2><div className="w-[80px] h-[4px] bg-[#A08C8A] rounded-[2px] mx-auto"></div></div>
           <div className="space-y-8">
             {[ 
-              {title: "Who We Are", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z", desc: "We are a collaborative scientific network dedicated to Syrian dental students, researchers, and clinicians. Our core mission is to promote high-impact oral biology studies and clinical guidelines."}, 
-              {title: "Our Vision", icon: "M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z", desc: "To transform dental medicine in Syria into a truly Evidence-Based Practice—replacing old rituals with verified scientific proof."}, 
-              {title: "Our Message", icon: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3", desc: "To help Syrian dental students and clinicians go beyond daily clinic routines and dive deep into research."} 
+              {title: "Who We Are", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z", desc: "We are the first dental network in Syria built to bring science into our daily practice. We connect Syrian dentists everywhere to help each other learn, research, and grow together"}, 
+              {title: "Our Vision", icon: "M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z", desc: "To transform dental medicine in Syria into a truly Evidence-Based Practice—replacing old rituals and personal opinions with solid, verified scientific proof."}, 
+              {title: "Our Message", icon: "M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3", desc: "To help Syrian dental students and clinicians go beyond daily clinic routines and dive deep into research. We provide the essential tools to understand scientific data, support the publication of local clinical work, and bridge the gap between everyday practice and global guidelines."} 
             ].map((item, idx) => (
               <div key={idx} className="bg-white rounded-[24px] border border-[#E5D5CD] p-8 shadow-sm flex items-start space-x-6">
                 <div className="p-4 bg-[#A08C8A]/15 rounded-2xl text-[#A08C8A]"><svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={item.icon} /></svg></div>
