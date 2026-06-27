@@ -370,9 +370,9 @@ function HomePage() {
       <section className="relative bg-gradient-to-b from-[#4A4A4A] to-[#3B3B3B] py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <div className="mb-8">
-            <div className="bg-white/5 rounded-[24px] border border-white/10 p-5 w-[160px] h-[160px] flex items-center justify-center shadow-2xl backdrop-blur-md overflow-hidden hover:scale-105 transition-transform duration-300">
-              <img src={logo} alt="SDAN Emblem" className="object-contain w-full h-full" />
-            </div>
+<div className="bg-white/5 rounded-[24px] border border-white/10 p-5 w-[220px] h-[220px] flex items-center justify-center shadow-2xl backdrop-blur-md overflow-hidden hover:scale-105 transition-transform duration-300">
+  <img src={logo} alt="SDAN Emblem" className="object-contain w-full h-full" />
+</div>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-black text-[#F9ECE4] tracking-tight mb-8">Syrian Dental<br /><span className="text-[#A08C8A]">Academic Network</span></h1>
