@@ -23,16 +23,27 @@ interface OurProjectPageProps {
 // =========================================================================
 const HERO_LOGO_URL = "/Logo-Icon-rose-ash.png";       
 const JOIN_US_LOGO_URL = "/Logo-Icon-pearl-gold.png";   
-const NAV_LOGO_URL = "/Logo-Icon-light-ivory.png";       
+const NAV_LOGO_URL = "/Logo-Icon-light-ivory.png";  
+
+const orthodontics = "/orthodontics.jpg";
+const fixed_prosthodontics = "/fixed_prosthodontics.jpg";
+const oral_surgery = "/oral_surgery.jpg";
+const pediatric_dentistry = "/pediatric_dentistry.jpg";
+const Endodontics = "/Endodontics.jpg";
+const Oral_medicine = "/Oral_medicine.jpg";
+const pathology = "/pathology.jpg";
+const perio = "/perio.jpg";
 
 const guidelinesData: GuidelineItem[] = [
   {
     id: "ortho",
     title: "Orthodontics",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-      </svg>
+      <img
+        src={orthodontics}
+        alt="Orthodontics"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Guidelines on the latest orthodontic techniques, diagnosis of malocclusion, and treatment planning using advanced fixed and removable appliances.",
     details: [
@@ -45,9 +56,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "surgery",
     title: "Oral Surgery",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6h-6" />
-      </svg>
+      <img
+        src={oral_surgery}
+        alt="Oral Surgery"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Approved surgical protocols for impacted teeth extraction, principles of dental implantology, and safe management of common surgical complications.",
     details: [
@@ -60,9 +73,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "fixed-prostho",
     title: "Fixed Prosthodontics",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-      </svg>
+      <img
+        src={fixed_prosthodontics}
+        alt="Fixed Prosthodontics"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "A comprehensive guide to crown and bridge preparation, selecting suitable dental materials (zirconia & porcelain), and digital or traditional impression methods.",
     details: [
@@ -75,10 +90,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "removable-prostho",
     title: "Removable Prosthodontics",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
+      <img
+        src={perio}
+        alt="Removable Prosthodontics"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Design and fabrication steps for complete and partial dentures, focusing on denture stability and patient comfort.",
     details: [
@@ -91,9 +107,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "pediatric",
     title: "Pediatric Dentistry",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
+      <img
+        src={pediatric_dentistry}
+        alt="Pediatric Dentistry"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Psychological and behavioral management of children in the dental clinic, early caries prevention, and pulp treatments for primary teeth.",
     details: [
@@ -106,9 +124,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "endodontics",
     title: "Endodontics",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-      </svg>
+      <img
+        src={Endodontics}
+        alt="Endodontics"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Modern techniques in root canal preparation using rotary instruments, irrigation protocols, and three-dimensional obturation.",
     details: [
@@ -121,9 +141,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "medicine",
     title: "Oral Medicine",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-      </svg>
+      <img
+        src={Oral_medicine}
+        alt="Oral Medicine"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Diagnosis and management of oral mucosal lesions, differentiating between benign and malignant conditions, and managing medically compromised dental patients.",
     details: [
@@ -136,9 +158,11 @@ const guidelinesData: GuidelineItem[] = [
     id: "histology",
     title: "Oral Histology",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      </svg>
+      <img
+        src={pathology}
+        alt="Oral Histology"
+        className="w-8 h-8 object-contain"
+      />
     ),
     desc: "Microscopic study of hard and soft oral tissues, and the stages of prenatal and clinical development of teeth and jaws.",
     details: [
@@ -207,7 +231,7 @@ export default function NextApp() {
             <div className="hidden md:flex items-center space-x-6">
               {[
                 { id: 'home', label: 'Home' },
-                { id: 'project', label: 'Our Projects' },
+                { id: 'project', label: 'Our Projects'},
                 { id: 'join', label: 'Join Us' },
                 { id: 'contact', label: 'Contact Us' }
               ].map((tab) => (
@@ -247,7 +271,7 @@ export default function NextApp() {
           <div className="md:hidden bg-[#4A4A4A] border-t border-white/5 px-4 pt-3 pb-5 space-y-2 animate-fadeIn shadow-2xl">
             {[
               { id: 'home', label: 'Home' },
-                { id: 'project', label: 'Our Projects' },
+                { id: 'project', label:'Our Projects'},
                 { id: 'join', label: 'Join Us' },
                 { id: 'contact', label: 'Contact Us' }
             ].map((tab) => (
